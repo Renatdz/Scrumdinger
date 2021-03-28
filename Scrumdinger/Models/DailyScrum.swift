@@ -6,7 +6,7 @@ struct DailyScrum: Identifiable {
     var attendees: [String]
     var lengthInMinutes: Int
     var color: Color
-    
+
     init(id: UUID = UUID(), title: String, attendees: [String], lengthInMinutes: Int, color: Color) {
         self.id = id
         self.title = title
@@ -33,8 +33,15 @@ extension DailyScrum {
         var lengthInMinutes: Double = 5.0
         var color: Color = .random
     }
-    
+
     var data: Data {
         return Data(title: title, attendees: attendees, lengthInMinutes: Double(lengthInMinutes), color: color)
+    }
+
+    mutating func update(from data: Data) {
+        title = data.title
+        attendees = data.attendees
+        lengthInMinutes = Int(data.lengthInMinutes)
+        color = data.color
     }
 }
