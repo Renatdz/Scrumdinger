@@ -13,6 +13,10 @@
 		B183A6A72618FD5700E2CE70 /* MeetingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B183A6A62618FD5700E2CE70 /* MeetingFooterView.swift */; };
 		B183A6AF261900D300E2CE70 /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B183A6AE261900D300E2CE70 /* AVPlayer+Ding.swift */; };
 		B183A6B4261900F500E2CE70 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = B183A6B3261900F500E2CE70 /* ding.wav */; };
+		B183A6BE261904BA00E2CE70 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = B183A6BD261904BA00E2CE70 /* History.swift */; };
+		B183A6C82619056C00E2CE70 /* MeetingInfoSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B183A6C72619056C00E2CE70 /* MeetingInfoSectionView.swift */; };
+		B183A6D0261905BE00E2CE70 /* AttendeesSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B183A6CF261905BE00E2CE70 /* AttendeesSectionView.swift */; };
+		B183A6D5261905F500E2CE70 /* HistorySectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B183A6D4261905F500E2CE70 /* HistorySectionView.swift */; };
 		B1AA4F81260FB94A005CE04D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AA4F80260FB94A005CE04D /* DetailView.swift */; };
 		B1CAF31C2607D82600BBE6B6 /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CAF31B2607D82600BBE6B6 /* ScrumsView.swift */; };
 		B1CB3690261112F4006D683D /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CB368F261112F4006D683D /* EditView.swift */; };
@@ -51,6 +55,10 @@
 		B183A6A62618FD5700E2CE70 /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
 		B183A6AE261900D300E2CE70 /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Ding.swift"; sourceTree = "<group>"; };
 		B183A6B3261900F500E2CE70 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
+		B183A6BD261904BA00E2CE70 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		B183A6C72619056C00E2CE70 /* MeetingInfoSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingInfoSectionView.swift; sourceTree = "<group>"; };
+		B183A6CF261905BE00E2CE70 /* AttendeesSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendeesSectionView.swift; sourceTree = "<group>"; };
+		B183A6D4261905F500E2CE70 /* HistorySectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistorySectionView.swift; sourceTree = "<group>"; };
 		B1AA4F80260FB94A005CE04D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		B1CAF31B2607D82600BBE6B6 /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
 		B1CB368F261112F4006D683D /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
@@ -126,6 +134,33 @@
 			children = (
 				B183A6862618F47B00E2CE70 /* MeetingHeaderView.swift */,
 				B183A6A62618FD5700E2CE70 /* MeetingFooterView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		B183A6B82619026800E2CE70 /* ScrumsList */ = {
+			isa = PBXGroup;
+			children = (
+				B1CAF31B2607D82600BBE6B6 /* ScrumsView.swift */,
+			);
+			path = ScrumsList;
+			sourceTree = "<group>";
+		};
+		B183A6C22619053E00E2CE70 /* ScrumDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B183A6C62619054900E2CE70 /* CustomViews */,
+				B1AA4F80260FB94A005CE04D /* DetailView.swift */,
+			);
+			path = ScrumDetail;
+			sourceTree = "<group>";
+		};
+		B183A6C62619054900E2CE70 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				B183A6C72619056C00E2CE70 /* MeetingInfoSectionView.swift */,
+				B183A6CF261905BE00E2CE70 /* AttendeesSectionView.swift */,
+				B183A6D4261905F500E2CE70 /* HistorySectionView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -212,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				B1F366EE2607CCC500D3B660 /* DailyScrum.swift */,
+				B183A6BD261904BA00E2CE70 /* History.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -238,9 +274,9 @@
 			isa = PBXGroup;
 			children = (
 				B183A6A12618FD3800E2CE70 /* Meeting */,
-				B1CAF31B2607D82600BBE6B6 /* ScrumsView.swift */,
+				B183A6B82619026800E2CE70 /* ScrumsList */,
 				B1F366F32607CD6A00D3B660 /* CardView.swift */,
-				B1AA4F80260FB94A005CE04D /* DetailView.swift */,
+				B183A6C22619053E00E2CE70 /* ScrumDetail */,
 				B1CB368F261112F4006D683D /* EditView.swift */,
 			);
 			path = Scenes;
@@ -377,7 +413,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1F366BD2607C0F200D3B660 /* MeetingView.swift in Sources */,
+				B183A6D5261905F500E2CE70 /* HistorySectionView.swift in Sources */,
 				B1CAF31C2607D82600BBE6B6 /* ScrumsView.swift in Sources */,
+				B183A6D0261905BE00E2CE70 /* AttendeesSectionView.swift in Sources */,
+				B183A6C82619056C00E2CE70 /* MeetingInfoSectionView.swift in Sources */,
+				B183A6BE261904BA00E2CE70 /* History.swift in Sources */,
 				B1CB3690261112F4006D683D /* EditView.swift in Sources */,
 				B183A6AF261900D300E2CE70 /* AVPlayer+Ding.swift in Sources */,
 				B183A6872618F47B00E2CE70 /* MeetingHeaderView.swift in Sources */,
